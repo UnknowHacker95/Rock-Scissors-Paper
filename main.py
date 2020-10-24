@@ -6,7 +6,7 @@ s = int(input())
 v = {'R':'S', 'S':'P', 'P':'R'}
 f = False
 while(f == False):
-  print("Enter the first player's decision:")
+  print("Enter the player's decision:")
   c = input()
   if(c in a): f = True
 if(s == 2):
