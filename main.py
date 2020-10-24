@@ -24,3 +24,4 @@ elif(c == 'S' and d == 'P') or (c == 'Scissors' and d == 'Paper'):
   print("1st player wins")
 elif(c == 'P' and d == 'S') or (c == 'Paper' and d == 'Scissors'):
   print("2nd player wins")
+else: print("Draw")
