@@ -3,6 +3,7 @@ import random
 a = ['R', 'P', 'S']
 print("Hi! Do you want to play with a person or a computer?(computer = 1, person = 2)")
 s = int(input())
+v = {'R':'S', 'S':'P', 'P':'R'}
 if(s == 2):
   f = False
   while(f == False):
@@ -14,17 +15,9 @@ if(s == 2):
     print("Enter the second player's decision:")
     d = input()
     if(d in a): f = True
-  if(c == 'P' and d == 'R'):
+  if(v[c] == d):
     print("1st player wins")
-  elif(d == 'P' and c == 'R'):
-    print("2nd player wins")
-  elif(c == 'R' and d == 'S'):
-    print("1st player wins")
-  elif(c == 'S' and d == 'R'):
-    print("2nd player wins")
-  elif(c == 'S' and d == 'P'):
-    print("1st player wins")
-  elif(c == 'P' and d == 'S'):
+  elif(v[d] == c):
     print("2nd player wins")
   else:
     print("Draw")
@@ -36,17 +29,10 @@ else:
     if(c in a): f = True
   x = random.randint(0, 2)
   d = a[x]
-  if(c == 'P' and d == 'R'):
+  print("Computer's decision -", d)
+  if(v[c] == d):
     print("player wins")
-  elif(d == 'P' and c == 'R'):
-    print("computer wins")
-  elif(c == 'R' and d == 'S'):
-    print("player wins")
-  elif(c == 'S' and d == 'R'):
-    print("computer wins")
-  elif(c == 'S' and d == 'P'):
-    print("player wins")
-  elif(c == 'P' and d == 'S'):
+  elif(v[d] == c):
     print("computer wins")
   else:
     print("Draw")
