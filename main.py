@@ -16,9 +16,9 @@ if(s == 2):
     d = input()
     if(d in a): f = True
   if(v[c] == d):
-    print("1st player wins")
+    print("1st player wins (⌐■_■)")
   elif(v[d] == c):
-    print("2nd player wins")
+    print("2nd player wins (⌐■_■)")
   else:
     print("Draw")
 else:
@@ -31,8 +31,8 @@ else:
   d = a[x]
   print("Computer's decision -", d)
   if(v[c] == d):
-    print("player wins")
+    print("player wins (￣^￣)ゞ")
   elif(v[d] == c):
-    print("computer wins")
+    print("computer wins (╯°益°)╯彡┻━┻")
   else:
     print("Draw")
